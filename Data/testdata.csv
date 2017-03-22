@@ -1,0 +1,7 @@
+"location_id","sample_date","sample_id","material","analyte","value","units","meas_basis","quals"
+"RM708B1","2005-04-07 00:00:00","05144404","Sediment","Aluminum","7310","mg/kg","dry",""
+"RM708B1","2005-04-07 00:00:00","05144404","Sediment","Antimony","6.2","mg/kg","dry","UJ"
+"RM708B1","2005-04-07 00:00:00","05144404","Sediment","Arsenic","3.9","mg/kg","dry","U"
+"RM708B1","2005-04-07 00:00:00","05144404","Sediment","Barium","101","mg/kg","dry",""
+"RM708B1","2005-04-07 00:00:00","05144404","Sediment","Beryllium","0.36","mg/kg","dry","J"
+"RM708B1","2005-04-07 00:00:00","05144404","Sediment","Cadmium","1.6","mg/kg","dry",""

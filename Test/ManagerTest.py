@@ -1,0 +1,201 @@
+import unittest
+from StringIO import StringIO
+
+import datetime
+
+import re
+
+import numpy
+from numpy.matlib import randn
+
+import Manager as mn
+import time
+import pandas as pd
+import nil as nil
+from querycsv.querycsv import (query_csv, query_csv_file,
+                               query_sqlite, import_csv,
+                               pretty_print, as_connection,
+                               import_array, write_csv)
+
+TEST_DIR = 'test_files'
+
+
+def to_csv_rows(content):
+    return [[col.strip() for col in row.split(',')]
+            for row in content.strip().split('\n')]
+
+
+def is_in_range(x):
+    if 1478624006 < x < 1478624039:
+        return 1
+    else:
+        return 0
+
+
+def transform_start_time(x):
+    y = re.sub(r'([()])', '', x)
+    y = y.split(',')
+    new_date = datetime.datetime.now()
+    if len(y) == 4:
+        new_date = datetime.datetime(int(y[0]), int(y[1]), int(y[2]), int(y[3]))
+    else:
+        new_date = datetime.datetime(int(y[0]), int(y[1]), int(y[2]), int(y[3]), int(y[4]))
+    return new_date
+
+
+class MyTestCase(unittest.TestCase):
+    def assertMatch(self, results, content):
+        rows = to_csv_rows(content)
+        self.assertEqual(len(results), len(rows))
+        for y in xrange(0, len(rows)):
+            rowA = rows[y]
+            rowB = results[y]
+            self.assertEqual(len(rowA), len(rowB))
+            for x in xrange(0, len(rowA)):
+                a = str(rowA[x])
+                b = str(rowB[x])
+                self.assertEqual(a, b)
+
+    def test_read_csv(self):
+        foo = u'test_files/foo.csv'
+        results = query_csv('select * from foo', foo)
+        self.assertTrue(results != nil)
+
+    def test_print_test_data(self):
+        testdata = u'../Data/testdata.csv'
+        fp = StringIO()
+        results = query_csv('select * from testdata', testdata)
+        pretty_print(results, fp)
+        self.assertNotEqual(results, nil)
+
+    def test_write_file(self):
+        testdata = u'../Data/testdata.csv'
+        results = query_csv('select * from testdata', testdata)
+        df = pd.DataFrame(results)
+        df.to_csv('output/list.csv', index=False, header=False)
+        self.assertEquals(True, True)
+
+    def test_first_results(self):
+        raw_data = u'../Data/raw_data.csv'
+        results = query_csv('select * from raw_data WHERE temperature1="27.1" limit 100', raw_data)
+        df = pd.DataFrame(results)
+        df.to_csv('output/first-results.csv', index=False, header=False)
+        self.assertEquals(True, True)
+
+    def test_pandas_read_write_clause(self):
+        df = pd.read_csv('../Data/raw_data.csv')
+        df = df[df['temperature1'] == 27.1]
+        df.to_csv('output/other-full-results.csv', index=False)
+        self.assertEquals(True, True)
+
+    def test_date_transform_pandas(self):
+        df = pd.read_csv('../Data/raw_data.csv')
+        df['start_time'] = pd.to_datetime(df["start_time"], unit='s')
+        df.to_csv('output/other-full-results.csv', index=False)
+        self.assertEquals(True, True)
+
+    def test_average_pandas_no_filter(self):
+        df = pd.read_csv('../Data/raw_data.csv')
+        df = df[["temperature1", "temperature2"]].mean()
+        # df["temperature2"] = df["temperature2"].mean()
+        df.to_csv('output/other-full-results.csv', index=False)
+        self.assertEquals(True, True)
+
+    def test_group_by_hours(self):
+        df = pd.read_csv('../Data/raw_data.csv')
+        df['start_time'] = pd.to_datetime(df["start_time"], unit='s')
+        # grouped = df.groupby([times.hour, times.minute])
+        grouped = df.groupby(by=[df.start_time.map(lambda x: (x.year, x.month, x.day, x.hour))])
+        # grouped[["temperature1","temperature2"]].mean()
+        print grouped.size()
+        # df.to_csv('output/other-full-results.csv', index=False)
+        self.assertEquals(True, True)
+
+    def test_group_by_minutes_average_temperature(self):
+        df = pd.read_csv('../Data/raw_data.csv')
+        df = df.set_index(['start_time'])
+        df.index = pd.to_datetime(df.index, unit='s')
+        ticks = df.ix[:, ['temperature1', 'temperature2']]
+        ticks = ticks.resample('30min').mean()
+        ticks['end_time'] = ticks.index + datetime.timedelta(minutes=30)
+        ticks.to_csv('output/raw_data_minutes.csv', index=True, na_rep='N/A')
+        self.assertEquals(True, True)
+
+    def test_group_by_hours_temperature(self):
+        df = pd.read_csv('../Data/raw_data.csv')
+        df['start_time'] = pd.to_datetime(df["start_time"], unit='s')
+        # grouped = df.groupby([times.hour, times.minute])
+        grouped = df.groupby(by=[df.start_time.map(lambda x: (x.year, x.month, x.day, x.hour))]).mean()
+        grouped['start'] = grouped.index.map(lambda x: (transform_start_time(format(x))))
+        grouped.to_csv('output/grouped-hour-results.csv', index=True, na_rep='N/A')
+        self.assertEquals(True, True)
+
+    def test_group_by_hours_average_temperature(self):
+        df = pd.read_csv('../Data/raw_data_minutes.csv')
+        # df = df[df.temperature1.notnull()]
+        period = 30
+        hours = 2
+        registresBefore = (60 * hours) / period
+        ticks = pd.DataFrame()
+        ticks['temperature'] = df['temperature1']
+        result = pd.DataFrame()
+        for x in range(0, ticks['temperature'].size):
+            result = result.append(ticks.head(registresBefore+1).transpose())
+            #result.reset_index(inplace=True, drop=True)
+            ticks.drop(ticks.index[0], inplace=True)
+            ticks.reset_index(inplace=True, drop=True)
+            result.reset_index(inplace=True, drop=True)
+
+        result['start_time'] = df['start_time']
+        result['end_time'] = pd.to_datetime(result['start_time']) + datetime.timedelta(minutes=60*hours)
+        #result = result[result[0].notnull() & result[1].notnull() & result[2].notnull() & result[3].notnull() & result[4].notnull()]
+        result = result.dropna()
+        print result
+
+        result.to_csv('output/grouped-no-gaps-range-results.csv', index=False)
+        self.assertEquals(True, True)
+
+    def test_append(self):
+        df = pd.DataFrame([[1, 2], [3, 4]])
+        print df
+
+        # frm = frm.take([1, 4, 3])
+        df2 = pd.DataFrame([[5, 6], [7, 8]])
+        print df2
+
+        df3 = df.append(df2, ignore_index=True)
+        print df3
+
+        self.assertEquals(True, True)
+
+    def test_invert_temperature(self):
+        frm = pd.DataFrame(randn(5, 2))
+        print frm
+        df2 = pd.DataFrame([[5, 6], [7, 8]])
+        print df2
+        #frm = frm.take()
+        frm = frm.transpose().append(df2)
+        print frm
+
+        # frm = frm.take([0, 2], axis=1)
+        # print frm
+
+        self.assertEquals(True, True)
+
+    def test_remove_first(self):
+        frm = pd.DataFrame(randn(5, 1))
+        print frm
+
+        # frm = frm.take([1, 4, 3])
+        frm = frm.drop(frm.index[0])
+        frm.reset_index(inplace=True, drop=True)
+        print frm
+
+        # frm = frm.take([0, 2], axis=1)
+        # print frm
+
+        self.assertEquals(True, True)
+
+
+if __name__ == '__main__':
+    unittest.main()
