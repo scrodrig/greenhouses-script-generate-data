@@ -1,1 +1,1 @@
-python manager.py -p /Users/SchubertDavidRodriguez/Dropbox/Schubert_Rodriguez/Data/ -i raw-data.csv -m 30 -t 4
+python manager.py -p /Users/SchubertDavidRodriguez/Dropbox/Schubert_Rodriguez/Data/ -i raw_data.csv -m 30 -h 4 -t 70
