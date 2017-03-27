@@ -5,7 +5,16 @@ import pandas as pd
 def get_generate_minutes_splited(path, input_file, minutes):
     df = pd.read_csv(path + input_file)
     df = df.set_index(['start_time'])
-    columns = ['end_time', 'temperature', 'luminosity', 'ground_humidity', 'environment_humidity']
+    columns = ['temperature',
+               'error_temperature',
+               'environment_humidity',
+               'error_environment_humidity',
+               'ground_humidity',
+               'error_ground_humidity',
+               'luminosity',
+               'error_luminosity',
+               'end_time']
+
     df.index = pd.to_datetime(df.index, unit='s')
     ticks = df.ix[:, ['temperature1',
                       'temperature2',
@@ -17,10 +26,15 @@ def get_generate_minutes_splited(path, input_file, minutes):
                       'environment_humidity2']]
     ticks = ticks.resample(str(minutes) + 'min').mean()
     ticks['temperature'] = ticks[['temperature1', 'temperature2']].mean(axis=1)
+    ticks['error_temperature'] = ticks[['temperature1', 'temperature2']].std(axis=1)
     ticks['luminosity'] = ticks[['luminosity']].mean(axis=1)
+    ticks['error_luminosity'] = ticks[['luminosity']].std(axis=1)
     ticks['ground_humidity'] = ticks[['ground_humidity1', 'ground_humidity2', 'ground_humidity3']].mean(axis=1)
+    ticks['error_ground_humidity'] = ticks[['ground_humidity1', 'ground_humidity2', 'ground_humidity3']].std(axis=1)
     ticks['environment_humidity'] = ticks[['environment_humidity1', 'environment_humidity2']].mean(axis=1)
+    ticks['error_environment_humidity'] = ticks[['environment_humidity1', 'environment_humidity2']].std(axis=1)
     ticks['end_time'] = ticks.index + datetime.timedelta(minutes=minutes)
+
     ticks.to_csv(path + 'raw_data_minutes.csv', index=True, na_rep='N/A', columns=columns)
     return 'raw_data_minutes.csv'
 
