@@ -662,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490588544194</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="No data between 1 and 0 get the hout as a float and the day of the year - appends the STD to each registry &#10;Besides divide the rows 70% for training and 30% for testing Into two files">
+      <created>1490618368182</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1490618368182</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
