@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="886a15a3-a7d5-4068-954e-da27b31cb4da" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/manager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/manager_util_error_std.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/manager_util_std.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/manager_util_all.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/manager_util_all_std.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Manager.py" afterPath="$PROJECT_DIR$/Source/Manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/manager_util.py" afterPath="$PROJECT_DIR$/Source/manager_util.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/manager_util_error.py" afterPath="$PROJECT_DIR$/Source/manager_util_error.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/ManagerTest.py" afterPath="$PROJECT_DIR$/Test/ManagerTest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/SpikeTest.py" afterPath="$PROJECT_DIR$/Test/SpikeTest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,10 +96,29 @@
       <file leaf-file-name="manager_util_error.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/manager_util_error.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="219" column="49" lean-forward="false" selection-start-line="219" selection-start-column="49" selection-end-line="219" selection-end-column="49" />
+            <state relative-caret-position="620">
+              <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager_util_all.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/manager_util_all.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="22" />
+              <folding>
+                <element signature="e#611#2085#0" expanded="false" />
+                <element signature="e#2150#3604#0" expanded="false" />
+                <element signature="e#3673#5174#0" expanded="false" />
+                <element signature="e#5248#6729#0" expanded="false" />
+                <element signature="e#6793#8289#0" expanded="false" />
+                <element signature="e#8358#9834#0" expanded="false" />
+                <element signature="e#9893#11375#0" expanded="false" />
+                <element signature="e#11439#12901#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -110,8 +127,8 @@
       <file leaf-file-name="manager_util_error_std.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/manager_util_error_std.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="49" lean-forward="false" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+            <state relative-caret-position="602">
+              <caret line="227" column="33" lean-forward="false" selection-start-line="227" selection-start-column="33" selection-end-line="227" selection-end-column="86" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -137,8 +154,8 @@
       <file leaf-file-name="manager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <state relative-caret-position="587">
+              <caret line="104" column="38" lean-forward="true" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -146,14 +163,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="manager_util_all_std.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/manager_util_all_std.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="manager_util.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/manager_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -217,14 +242,16 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Test/test_files/ManagerTest.py" />
         <option value="$PROJECT_DIR$/Source/Manager.py" />
-        <option value="$PROJECT_DIR$/Source/manager_util.py" />
         <option value="$PROJECT_DIR$/Test/ManagerUtilTest.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Test/ManagerTest.py" />
         <option value="$PROJECT_DIR$/Test/SpikeTest.py" />
-        <option value="$PROJECT_DIR$/Source/manager_util_error.py" />
         <option value="$PROJECT_DIR$/Source/manager_util_error_std.py" />
         <option value="$PROJECT_DIR$/Source/manager_util_std.py" />
+        <option value="$PROJECT_DIR$/Source/manager_util.py" />
+        <option value="$PROJECT_DIR$/Source/manager_util_error.py" />
+        <option value="$PROJECT_DIR$/Source/manager_util_all.py" />
+        <option value="$PROJECT_DIR$/Source/manager_util_all_std.py" />
         <option value="$PROJECT_DIR$/Source/manager.py" />
       </list>
     </option>
@@ -312,20 +339,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -738,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490618395001</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="No data between 1 and 0 get the hout as a float and the day of the year - appends the STD to each registry &#10;Besides divide the rows 70% for training and 30% for testing Into two files">
+      <created>1491793375210</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1491793375210</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -835,8 +855,13 @@
           <line>203</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Source/manager_util_all.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="59" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
@@ -845,23 +870,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Source/manager_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/site-packages/querycsv/querycsv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/site-packages/querycsv/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
@@ -873,9 +881,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,16 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/manager_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/ManagerTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1144,26 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/manager_util_error.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="219" column="49" lean-forward="false" selection-start-line="219" selection-start-column="49" selection-end-line="219" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/manager_util_error_std.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="49" lean-forward="false" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/manager_util_std.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1172,10 +1148,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Source/manager_util_error.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/manager_util_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="22" />
+          <folding>
+            <element signature="e#611#2085#0" expanded="false" />
+            <element signature="e#2150#3604#0" expanded="false" />
+            <element signature="e#3673#5174#0" expanded="false" />
+            <element signature="e#5248#6729#0" expanded="false" />
+            <element signature="e#6793#8289#0" expanded="false" />
+            <element signature="e#8358#9834#0" expanded="false" />
+            <element signature="e#9893#11375#0" expanded="false" />
+            <element signature="e#11439#12901#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/manager_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/manager_util_error_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="227" column="33" lean-forward="false" selection-start-line="227" selection-start-column="33" selection-end-line="227" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/manager_util_all_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="587">
+          <caret line="104" column="38" lean-forward="true" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

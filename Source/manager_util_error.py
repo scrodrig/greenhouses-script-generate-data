@@ -26,8 +26,8 @@ def group_by_hours_temperature_error(path, input_file, minutes, time_behind_hour
         ticks_2.reset_index(inplace=True, drop=True)
         result_1.reset_index(inplace=True, drop=True)
 
-    #result = result.dropna()
-    #result_1 = result_1.dropna()
+    # result = result.dropna()
+    # result_1 = result_1.dropna()
     result.reset_index(inplace=True, drop=True)
     result_1.reset_index(inplace=True, drop=True)
     result_1.drop(result_1.columns[len(result_1.columns) - 1], axis=1, inplace=True)
@@ -38,7 +38,7 @@ def group_by_hours_temperature_error(path, input_file, minutes, time_behind_hour
     result_2 = pd.concat([result, result_1], axis=1)
     result_2 = result_2.sort_index(axis=1)
 
-    #PRODUCE ERROR PORQYE SE ESTAN TOMANDO REGISTROS DE UNA SET QUE NO FUERON REMOVIDOS
+    # PRODUCE ERROR PORQYE SE ESTAN TOMANDO REGISTROS DE UNA SET QUE NO FUERON REMOVIDOS
     # LOS N/A DE LA COLECION QUE ES EL CASO DE DG START TIME
     result['start_time'] = df['start_time']
 
@@ -229,3 +229,5 @@ def group_by_hours_luminosity_error(path, input_file, minutes, time_behind_hours
                          header=True)
     test_data.to_csv(path + 'grouped-no-gaps-luminosity-range-results_test.csv', index=False,
                      header=True)
+
+
