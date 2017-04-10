@@ -200,7 +200,7 @@ class SpikeTestCase(unittest.TestCase):
 
 
         # result['end_time'] = pd.to_datetime(result['start_time']) + datetime.timedelta(minutes=60 * hours)
-        result = result.dropna()
+        #result = result.dropna()
 
         ticks_2 = pd.DataFrame()
         result_1 = pd.DataFrame()
@@ -210,8 +210,9 @@ class SpikeTestCase(unittest.TestCase):
             ticks_2.drop(ticks_2.index[0], inplace=True)
             ticks_2.reset_index(inplace=True, drop=True)
             result_1.reset_index(inplace=True, drop=True)
-        result = result.dropna()
-        result_1 = result_1.dropna()
+
+        #result = result.dropna()
+        #result_1 = result_1.dropna()
         result.reset_index(inplace=True, drop=True)
         result_1.reset_index(inplace=True, drop=True)
 
@@ -221,13 +222,15 @@ class SpikeTestCase(unittest.TestCase):
 
         result = result.rename_axis(lambda x: 2 * x, axis=1)
         result_1 = result_1.rename_axis(lambda x: 2 * x + 1, axis=1)
+
+
         result['start_time'] = df['start_time']
 
         result_2 = pd.concat([result, result_1], axis=1)
 
         result_2 = result_2.sort_index(axis=1)
 
-        print result_2
+        #print result_2
 
         result_2.reset_index(inplace=True, drop=True)
 
@@ -237,12 +240,20 @@ class SpikeTestCase(unittest.TestCase):
 
         result_2['day_year'] = pd.to_datetime(result['start_time']).dt.dayofyear
 
+        result_2.dropna(inplace=True)
+
+        print result_2
+
         training = len(result_2.index) * 70 / 100
         test = len(result_2.index) - training
         training_data = result_2.head(training)
         result_2 = result_2.ix[training:]
         result_2.reset_index(drop=True, inplace=True)
         test_data = result_2.head(test)
+
+
+
+
 
         training_data.to_csv('output/grouped-no-gaps-range-results_training.csv', index=False, header=False)
         test_data.to_csv('output/grouped-no-gaps-range-results_test.csv', index=False, header=False)
@@ -287,6 +298,83 @@ class SpikeTestCase(unittest.TestCase):
 
         # frm = frm.take([0, 2], axis=1)
         # print frm
+
+        self.assertEquals(True, True)
+
+
+    def test_group_by_hours_average_temperature_error_std(self):
+        df = pd.read_csv('output/raw_data_minutes.csv')
+        period = 30
+        hours = 4
+        # period = 60*2 + 30
+
+        registresBefore = (60 * hours) / period
+        ticks = pd.DataFrame()
+        ticks['temperature'] = df['temperature']
+        # ticks['error_temperature'] = df['error_temperature']
+        dates = pd.DataFrame()
+        result = pd.DataFrame()
+        for x in range(0, ticks['temperature'].size):
+            result = result.append(ticks.head(registresBefore + 1).transpose())
+            # result.reset_index(inplace=True, drop=True)
+            ticks.drop(ticks.index[0], inplace=True)
+            ticks.reset_index(inplace=True, drop=True)
+            result.reset_index(inplace=True, drop=True)
+
+
+        ticks_2 = pd.DataFrame()
+        result_1 = pd.DataFrame()
+        ticks_2['error_temperature'] = df['error_temperature']
+        for x in range(0, ticks_2['error_temperature'].size):
+            result_1 = result_1.append(ticks_2.head(registresBefore + 1).transpose())
+            ticks_2.drop(ticks_2.index[0], inplace=True)
+            ticks_2.reset_index(inplace=True, drop=True)
+            result_1.reset_index(inplace=True, drop=True)
+
+        result.reset_index(inplace=True, drop=True)
+        result_1.reset_index(inplace=True, drop=True)
+
+        result_1.drop(result_1.columns[len(result_1.columns) - 1], axis=1, inplace=True)
+
+        #print result
+
+        result = result.rename_axis(lambda x: 2 * x, axis=1)
+        result_1 = result_1.rename_axis(lambda x: 2 * x + 1, axis=1)
+
+
+        result['start_time'] = df['start_time']
+
+        result_2 = pd.concat([result, result_1], axis=1)
+
+        result_2 = result_2.sort_index(axis=1)
+
+        #print result_2
+
+        result_2.reset_index(inplace=True, drop=True)
+
+        result_2['hour'] = pd.to_datetime(result['start_time']).dt.hour + \
+                           pd.to_datetime(result['start_time']).dt.minute / 60 + \
+                           pd.to_datetime(result['start_time']).dt.second / 3600
+
+        result_2['day_year'] = pd.to_datetime(result['start_time']).dt.dayofyear
+
+        result_2.dropna(inplace=True)
+
+        result_2.reset_index(drop=True, inplace=True)
+        print result_2
+        training = len(result_2.index) * 70 / 100
+        test = len(result_2.index) - training
+        training_data = result_2.head(training)
+        result_2 = result_2.ix[training:]
+        result_2.reset_index(drop=True, inplace=True)
+        test_data = result_2.head(test)
+
+
+
+
+
+        training_data.to_csv('output/grouped-no-gaps-range-results_training.csv', index=False, header=False)
+        test_data.to_csv('output/grouped-no-gaps-range-results_test.csv', index=False, header=False)
 
         self.assertEquals(True, True)
 

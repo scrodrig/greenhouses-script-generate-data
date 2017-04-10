@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="886a15a3-a7d5-4068-954e-da27b31cb4da" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/manager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/manager_util_error_std.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/manager_util_std.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Manager.py" afterPath="$PROJECT_DIR$/Source/Manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/manager_util_error.py" afterPath="$PROJECT_DIR$/Source/manager_util_error.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/ManagerTest.py" afterPath="$PROJECT_DIR$/Test/ManagerTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/SpikeTest.py" afterPath="$PROJECT_DIR$/Test/SpikeTest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,6 +56,7 @@
     <SUITE FILE_PATH="coverage/DataManager$Unittest_SpikeTestCase_test_group_by_hours_average_temperature.coverage" NAME="Unittest SpikeTestCase.test_group_by_hours_average_temperature Coverage Results" MODIFIED="1490281292714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/DataManager$Unittests_in_DataManager__1_.coverage" NAME="Unittests in DataManager (1) Coverage Results" MODIFIED="1489957818247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataManager$Unittests_in_ManagerTest.coverage" NAME="Unittests in ManagerTest Coverage Results" MODIFIED="1489990116233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/DataManager$Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error_std.coverage" NAME="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error_std Coverage Results" MODIFIED="1491792774018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/DataManager$Unittest_MyTestCase_test_remove_first.coverage" NAME="Unittest MyTestCase.test_remove_first Coverage Results" MODIFIED="1490156547328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/DataManager$Unittest_TestQueryFunctions_test_query_csv1.coverage" NAME="Unittest TestQueryFunctions.test_query_csv1 Coverage Results" MODIFIED="1489961154593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/DataManager$Unittest_ManagerTestCase_test_data_in_minutes.coverage" NAME="Unittest ManagerTestCase.test_data_in_minutes Coverage Results" MODIFIED="1490262268201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/test_files" />
@@ -61,11 +68,11 @@
     <SUITE FILE_PATH="coverage/DataManager$Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error__1_.coverage" NAME="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error (1) Coverage Results" MODIFIED="1490568954000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/DataManager$Unittest_TestStringMethods_test_upper__1_.coverage" NAME="Unittest TestStringMethods.test_upper (1) Coverage Results" MODIFIED="1489957046527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
     <SUITE FILE_PATH="coverage/DataManager$Unittest_MyTestCase_test_date_transform_pandas.coverage" NAME="Unittest MyTestCase.test_date_transform_pandas Coverage Results" MODIFIED="1489979081926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/DataManager$Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error.coverage" NAME="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error Coverage Results" MODIFIED="1490587943586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/DataManager$Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error.coverage" NAME="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error Coverage Results" MODIFIED="1491782421579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/DataManager$Unittests_in_MyTestCase__2_.coverage" NAME="Unittests in MyTestCase (2) Coverage Results" MODIFIED="1489957855689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/DataManager$Unittest_MyTestCase_test_pandas.coverage" NAME="Unittest MyTestCase.test_pandas Coverage Results" MODIFIED="1489977331742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/DataManager$Unittest_MyTestCase_test_append.coverage" NAME="Unittest MyTestCase.test_append Coverage Results" MODIFIED="1490155717289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/DataManager$Unittest_ManagerTestCase_test_manager_file.coverage" NAME="Unittest ManagerTestCase.test_manager_file Coverage Results" MODIFIED="1490588238122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/DataManager$Unittest_ManagerTestCase_test_manager_file.coverage" NAME="Unittest ManagerTestCase.test_manager_file Coverage Results" MODIFIED="1491789616098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/DataManager$Unittest_MyTestCase_test_group_by_hours_average_temperature.coverage" NAME="Unittest MyTestCase.test_group_by_hours_average_temperature Coverage Results" MODIFIED="1490162460167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/DataManager$Unittest_ManagerUtilTestCase_test_data_in_minutes.coverage" NAME="Unittest ManagerUtilTestCase.test_data_in_minutes Coverage Results" MODIFIED="1490275993719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
   </component>
@@ -78,10 +85,11 @@
       <file leaf-file-name="ManagerTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/ManagerTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+                <marker date="1491788748000" expanded="true" signature="74:1285" ph="..." />
               </folding>
             </state>
           </provider>
@@ -90,10 +98,37 @@
       <file leaf-file-name="manager_util_error.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/manager_util_error.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="359">
+              <caret line="219" column="49" lean-forward="false" selection-start-line="219" selection-start-column="49" selection-end-line="219" selection-end-column="49" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager_util_error_std.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/manager_util_error_std.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="49" lean-forward="false" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpikeTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/SpikeTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="362" column="53" lean-forward="true" selection-start-line="362" selection-start-column="8" selection-end-line="362" selection-end-column="53" />
+              <folding>
+                <marker date="1491792770000" expanded="true" signature="1596:1613" ph="select * fro... foo" />
+                <marker date="1491792770000" expanded="true" signature="1794:1816" ph="select * fro... testdata" />
+                <marker date="1491792770000" expanded="true" signature="2009:2031" ph="select * fro... testdata" />
+                <marker date="1491792770000" expanded="true" signature="2288:2346" ph="select * fro... raw_data" />
               </folding>
             </state>
           </provider>
@@ -102,11 +137,33 @@
       <file leaf-file-name="manager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+            <state relative-caret-position="332">
+              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager_util.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/manager_util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager_util_std.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/manager_util_std.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,6 +195,7 @@
       <find>ddof</find>
       <find>raw_data_minutes</find>
       <find>result['start_time'] = df['start_time']</find>
+      <find>dropna</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,12 +217,15 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Test/test_files/ManagerTest.py" />
         <option value="$PROJECT_DIR$/Source/Manager.py" />
-        <option value="$PROJECT_DIR$/Source/manager.py" />
         <option value="$PROJECT_DIR$/Source/manager_util.py" />
         <option value="$PROJECT_DIR$/Test/ManagerUtilTest.py" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Test/ManagerTest.py" />
         <option value="$PROJECT_DIR$/Test/SpikeTest.py" />
         <option value="$PROJECT_DIR$/Source/manager_util_error.py" />
+        <option value="$PROJECT_DIR$/Source/manager_util_error_std.py" />
+        <option value="$PROJECT_DIR$/Source/manager_util_std.py" />
+        <option value="$PROJECT_DIR$/Source/manager.py" />
       </list>
     </option>
   </component>
@@ -176,8 +237,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="963" />
+    <option name="width" value="1920" />
+    <option name="height" value="1113" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -195,6 +256,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,26 +331,26 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Data" />
-      <recent name="$PROJECT_DIR$/Source" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Test" />
       <recent name="$PROJECT_DIR$/Data" />
       <recent name="$PROJECT_DIR$/Source" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Source" />
+      <recent name="$PROJECT_DIR$/Data" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittest ManagerTestCase.test_manager_file">
+  <component name="RunManager" selected="Python tests.Unittest SpikeTestCase.test_group_by_hours_average_temperature_error_std">
     <configuration default="false" name="Unittest ManagerUtilTestCase.test_data_temperature_in_minutes_error" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,29 +365,6 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/ManagerUtilTest.py" />
       <option name="CLASS_NAME" value="ManagerUtilTestCase" />
       <option name="METHOD_NAME" value="test_data_temperature_in_minutes_error" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest ManagerUtilTestCase.test_data_ground_humidity_grouped_in_minutes" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DataManager" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/ManagerUtilTest.py" />
-      <option name="CLASS_NAME" value="ManagerUtilTestCase" />
-      <option name="METHOD_NAME" value="test_data_ground_humidity_grouped_in_minutes" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -390,6 +429,29 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/SpikeTest.py" />
       <option name="CLASS_NAME" value="SpikeTestCase" />
       <option name="METHOD_NAME" value="test_group_by_hours_average_temperature_error" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error_std" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataManager" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/SpikeTest.py" />
+      <option name="CLASS_NAME" value="SpikeTestCase" />
+      <option name="METHOD_NAME" value="test_group_by_hours_average_temperature_error_std" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -615,18 +677,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest ManagerUtilTestCase.test_data_temperature_in_minutes_error" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest ManagerUtilTestCase.test_data_ground_humidity_grouped_in_minutes" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest ManagerTestCase.test_manager_file" />
-      <item index="3" class="java.lang.String" itemvalue="Python.manager_util_error" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest ManagerTestCase.test_manager_file" />
+      <item index="2" class="java.lang.String" itemvalue="Python.manager_util_error" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SpikeTestCase.test_group_by_hours_average_temperature_error_std" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest ManagerTestCase.test_manager_file" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest ManagerUtilTestCase.test_data_temperature_in_minutes_error" />
-        <item index="3" class="java.lang.String" itemvalue="Python.manager_util_error" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest ManagerUtilTestCase.test_data_ground_humidity_grouped_in_minutes" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest SpikeTestCase.test_group_by_hours_average_temperature_error_std" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest ManagerTestCase.test_manager_file" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest ManagerUtilTestCase.test_data_temperature_in_minutes_error" />
+        <item index="4" class="java.lang.String" itemvalue="Python.manager_util_error" />
       </list>
     </recent_temporary>
   </component>
@@ -669,39 +731,46 @@
       <option name="project" value="LOCAL" />
       <updated>1490618368182</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="No data between 1 and 0 get the hout as a float and the day of the year - appends the STD to each registry &#10;Besides divide the rows 70% for training and 30% for testing Into two files">
+      <created>1490618395001</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1490618395001</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_ManagerTestCase_test_manager_file - 2017.03.26 at 23h 15m 40s.xml">
+    <history-entry file="Unittest_ManagerTestCase_test_manager_file - 2017.04.09 at 20h 38m 58s.xml">
       <configuration name="Unittest ManagerTestCase.test_manager_file" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_ManagerTestCase_test_manager_file - 2017.03.26 at 23h 17m 32s.xml">
+    <history-entry file="Unittest_ManagerTestCase_test_manager_file - 2017.04.09 at 20h 44m 41s.xml">
       <configuration name="Unittest ManagerTestCase.test_manager_file" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.03.26 at 23h 06m 32s.xml">
+    <history-entry file="Unittest_ManagerTestCase_test_manager_file - 2017.04.09 at 21h 22m 05s.xml">
+      <configuration name="Unittest ManagerTestCase.test_manager_file" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.04.09 at 18h 53m 08s.xml">
       <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.03.26 at 23h 07m 15s.xml">
+    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.04.09 at 18h 54m 38s.xml">
       <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.03.26 at 23h 07m 23s.xml">
+    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.04.09 at 18h 59m 37s.xml">
       <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.03.26 at 23h 09m 57s.xml">
+    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.04.09 at 19h 00m 25s.xml">
       <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.03.26 at 23h 10m 23s.xml">
-      <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" configurationId="tests" />
+    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error_std - 2017.04.09 at 21h 51m 01s.xml">
+      <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error_std" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.03.26 at 23h 11m 01s.xml">
-      <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" configurationId="tests" />
+    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error_std - 2017.04.09 at 21h 52m 35s.xml">
+      <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error_std" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.03.26 at 23h 12m 16s.xml">
-      <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error - 2017.03.26 at 23h 12m 27s.xml">
-      <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error" configurationId="tests" />
+    <history-entry file="Unittest_SpikeTestCase_test_group_by_hours_average_temperature_error_std - 2017.04.09 at 21h 52m 57s.xml">
+      <configuration name="Unittest SpikeTestCase.test_group_by_hours_average_temperature_error_std" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -714,20 +783,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="963" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1920" height="1113" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22344323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23269436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22158438" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3306544" sideWeight="0.49714285" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908913" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33006856" sideWeight="0.49714285" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23650976" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2360431" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2881745" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.287953" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -762,12 +831,12 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Source/manager_util.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="49" />
+          <url>file://$PROJECT_DIR$/Source/manager_util_error.py</url>
+          <line>203</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="51" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
@@ -776,52 +845,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test/ManagerTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/manager_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/SpikeTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="147" column="48" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1490587990000" expanded="true" signature="1596:1613" ph="select * fro... foo" />
-            <marker date="1490587990000" expanded="true" signature="1794:1816" ph="select * fro... testdata" />
-            <marker date="1490587990000" expanded="true" signature="2009:2031" ph="select * fro... testdata" />
-            <marker date="1490587990000" expanded="true" signature="2288:2346" ph="select * fro... raw_data" />
-            <marker date="1490587990000" expanded="true" signature="2288:2358" ph="select * fro... test" />
-            <marker date="1490587990000" expanded="true" signature="8742:9805" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/ManagerUtilTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/manager_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -836,15 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1489958130000" expanded="true" signature="4018:4039" ph="drop table i... " />
-            <marker date="1489958130000" expanded="true" signature="4080:4100" ph="create table... missing_value" />
-            <marker date="1489958130000" expanded="true" signature="4279:4305" ph="insert into missing_value... " />
-            <marker date="1489958130000" expanded="true" signature="4902:4923" ph="drop table i... " />
-            <marker date="1489958130000" expanded="true" signature="4964:4984" ph="create table... missing_value" />
-            <marker date="1489958130000" expanded="true" signature="5178:5204" ph="insert into missing_value... " />
-            <marker date="1489958130000" expanded="true" signature="5357:5371" ph="select 1 fro... missing_value" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,25 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
           <caret line="193" column="10" lean-forward="false" selection-start-line="193" selection-start-column="10" selection-end-line="193" selection-end-column="10" />
-          <folding>
-            <marker date="1489958130000" expanded="true" signature="2187:2204" ph="select * fro... foo" />
-            <marker date="1489958130000" expanded="true" signature="2424:2441" ph="select * fro... foo" />
-            <marker date="1489958130000" expanded="true" signature="2424:2500" ph="select * fro... " />
-            <marker date="1489958130000" expanded="true" signature="2483:2500" ph="select * fro... bar" />
-            <marker date="1489958130000" expanded="true" signature="2783:2807" ph="update foo s... " />
-            <marker date="1489958130000" expanded="true" signature="2840:2857" ph="select a fro... foo" />
-            <marker date="1489958130000" expanded="true" signature="3122:3146" ph="update foo s... " />
-            <marker date="1489958130000" expanded="true" signature="3180:3197" ph="select a fro... foo" />
-            <marker date="1489958130000" expanded="true" signature="3491:3509" ph="select * fro... foo2" />
-            <marker date="1489958130000" expanded="true" signature="3822:3839" ph="select * fro... tmp" />
-            <marker date="1489958130000" expanded="true" signature="4052:4069" ph="select * fro... tmp" />
-            <marker date="1489958130000" expanded="true" signature="4377:4394" ph="select * fro... tmp" />
-            <marker date="1489958130000" expanded="true" signature="4606:4623" ph="select * fro... tmp" />
-            <marker date="1489958130000" expanded="true" signature="4818:4835" ph="select * fro... foo" />
-            <marker date="1489958130000" expanded="true" signature="5076:5100" ph="select count... foo" />
-            <marker date="1489958130000" expanded="true" signature="5368:5405" ph="select * fro... result" />
-            <marker date="1489958130000" expanded="true" signature="5656:5693" ph="select * fro... result" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="2176" column="0" lean-forward="false" selection-start-line="2176" selection-start-column="0" selection-end-line="2176" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,25 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
           <caret line="193" column="10" lean-forward="false" selection-start-line="193" selection-start-column="10" selection-end-line="193" selection-end-column="10" />
-          <folding>
-            <marker date="1489958130000" expanded="true" signature="2187:2204" ph="select * fro... foo" />
-            <marker date="1489958130000" expanded="true" signature="2424:2441" ph="select * fro... foo" />
-            <marker date="1489958130000" expanded="true" signature="2424:2500" ph="select * fro... " />
-            <marker date="1489958130000" expanded="true" signature="2483:2500" ph="select * fro... bar" />
-            <marker date="1489958130000" expanded="true" signature="2783:2807" ph="update foo s... " />
-            <marker date="1489958130000" expanded="true" signature="2840:2857" ph="select a fro... foo" />
-            <marker date="1489958130000" expanded="true" signature="3122:3146" ph="update foo s... " />
-            <marker date="1489958130000" expanded="true" signature="3180:3197" ph="select a fro... foo" />
-            <marker date="1489958130000" expanded="true" signature="3491:3509" ph="select * fro... foo2" />
-            <marker date="1489958130000" expanded="true" signature="3822:3839" ph="select * fro... tmp" />
-            <marker date="1489958130000" expanded="true" signature="4052:4069" ph="select * fro... tmp" />
-            <marker date="1489958130000" expanded="true" signature="4377:4394" ph="select * fro... tmp" />
-            <marker date="1489958130000" expanded="true" signature="4606:4623" ph="select * fro... tmp" />
-            <marker date="1489958130000" expanded="true" signature="4818:4835" ph="select * fro... foo" />
-            <marker date="1489958130000" expanded="true" signature="5076:5100" ph="select count... foo" />
-            <marker date="1489958130000" expanded="true" signature="5368:5405" ph="select * fro... result" />
-            <marker date="1489958130000" expanded="true" signature="5656:5693" ph="select * fro... result" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,127 +1010,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="LargeFileEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/output/grouped-no-gaps-range-results_training.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3315">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/output/grouped-no-gaps-range-results_test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/grouped-no-gaps-range-results_test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1170">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/grouped-temperature-range-results.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/grouped-no-gaps-range-results_training.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/grouped-no-gaps-range-results_test.csv" />
+    <entry file="file://$PROJECT_DIR$/Data/grouped-temperature-range-results.csv" />
+    <entry file="file://$PROJECT_DIR$/Data/grouped-no-gaps-range-results_training.csv" />
     <entry file="file:///usr/local/lib/python2.7/site-packages/querycsv/querycsv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="272" column="0" lean-forward="false" selection-start-line="272" selection-start-column="0" selection-end-line="273" selection-end-column="10" />
-          <folding>
-            <marker date="1489958130000" expanded="true" signature="4018:4039" ph="drop table i... " />
-            <marker date="1489958130000" expanded="true" signature="4080:4100" ph="create table... missing_value" />
-            <marker date="1489958130000" expanded="true" signature="4279:4305" ph="insert into missing_value... " />
-            <marker date="1489958130000" expanded="true" signature="4902:4923" ph="drop table i... " />
-            <marker date="1489958130000" expanded="true" signature="4964:4984" ph="create table... missing_value" />
-            <marker date="1489958130000" expanded="true" signature="5178:5204" ph="insert into missing_value... " />
-            <marker date="1489958130000" expanded="true" signature="5357:5371" ph="select 1 fro... missing_value" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/grouped-no-gaps-environment-humidity-range-results_test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="86" column="40" lean-forward="false" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/output/raw_data_minutes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="71" lean-forward="true" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/manager_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/raw_data_minutes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/grouped-environment-humidity-range-results.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/grouped-no-gaps-temperature-range-results_test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/ManagerUtilTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="64" column="28" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/grouped-no-gaps-environment-humidity-range-results_test.csv" />
+    <entry file="file://$PROJECT_DIR$/Data/grouped-environment-humidity-range-results.csv" />
+    <entry file="file://$PROJECT_DIR$/Data/grouped-no-gaps-temperature-range-results_test.csv" />
     <entry file="file://$PROJECT_DIR$/Test/TestQueryFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1172,34 +1044,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/SpikeTest.py">
+    <entry file="file://$PROJECT_DIR$/Data/grouped-no-gaps-temperature-range-results_training.csv" />
+    <entry file="file://$PROJECT_DIR$/Data/raw_data_minutes.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="223" column="47" lean-forward="true" selection-start-line="221" selection-start-column="8" selection-end-line="223" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1490587990000" expanded="true" signature="1596:1613" ph="select * fro... foo" />
-            <marker date="1490587990000" expanded="true" signature="1794:1816" ph="select * fro... testdata" />
-            <marker date="1490587990000" expanded="true" signature="2009:2031" ph="select * fro... testdata" />
-            <marker date="1490587990000" expanded="true" signature="2288:2346" ph="select * fro... raw_data" />
-            <marker date="1490587990000" expanded="true" signature="2288:2358" ph="select * fro... test" />
-            <marker date="1490587990000" expanded="true" signature="8742:9805" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/grouped-no-gaps-temperature-range-results_training.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="233" lean-forward="true" selection-start-line="0" selection-start-column="233" selection-end-line="0" selection-end-column="233" />
+        <state relative-caret-position="360">
+          <caret line="116" column="23" lean-forward="false" selection-start-line="98" selection-start-column="16" selection-end-line="116" selection-end-column="23" />
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="16" />
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="16" />
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="16" />
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="16" />
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="16" />
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="16" />
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="16" />
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/manager_util_error.py">
+    <entry file="file://$PROJECT_DIR$/Test/ManagerUtilTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="497">
+          <caret line="64" column="28" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/output/raw_data_minutes.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="71" lean-forward="true" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/manager_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -1208,18 +1098,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/ManagerTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1491788748000" expanded="true" signature="74:1285" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/output/grouped-no-gaps-range-results_test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-994">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/raw_data_minutes_std.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/output/grouped-no-gaps-range-results_training.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3049">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/SpikeTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="362" column="53" lean-forward="true" selection-start-line="362" selection-start-column="8" selection-end-line="362" selection-end-column="53" />
+          <folding>
+            <marker date="1491792770000" expanded="true" signature="1596:1613" ph="select * fro... foo" />
+            <marker date="1491792770000" expanded="true" signature="1794:1816" ph="select * fro... testdata" />
+            <marker date="1491792770000" expanded="true" signature="2009:2031" ph="select * fro... testdata" />
+            <marker date="1491792770000" expanded="true" signature="2288:2346" ph="select * fro... raw_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/manager_util_error.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="219" column="49" lean-forward="false" selection-start-line="219" selection-start-column="49" selection-end-line="219" selection-end-column="49" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Source/manager_util_error_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="49" lean-forward="false" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/manager_util_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+        <state relative-caret-position="332">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

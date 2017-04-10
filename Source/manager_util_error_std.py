@@ -57,8 +57,8 @@ def group_by_hours_temperature_error(path, input_file, minutes, time_behind_hour
     result_2.reset_index(drop=True, inplace=True)
     test_data = result_2.head(test)
 
-    training_data.to_csv(path + 'grouped-no-gaps-temperature-range-results_training.csv', index=False, header=True)
-    test_data.to_csv(path + 'grouped-no-gaps-temperature-range-results_test.csv', index=False, header=True)
+    training_data.to_csv(path + 'grouped-no-gaps-temperature-range-results_training_std.csv', index=False, header=True)
+    test_data.to_csv(path + 'grouped-no-gaps-temperature-range-results_test_std.csv', index=False, header=True)
 
 
 def group_by_hours_environment_humidity_error(path, input_file, minutes, time_behind_hours, training_percentage):
@@ -112,9 +112,9 @@ def group_by_hours_environment_humidity_error(path, input_file, minutes, time_be
     result_2.reset_index(drop=True, inplace=True)
     test_data = result_2.head(test)
 
-    training_data.to_csv(path + 'grouped-no-gaps-environment-humidity-range-results_training.csv', index=False,
+    training_data.to_csv(path + 'grouped-no-gaps-environment-humidity-range-results_training_std.csv', index=False,
                          header=True)
-    test_data.to_csv(path + 'grouped-no-gaps-environment-humidity-range-results_test.csv', index=False, header=True)
+    test_data.to_csv(path + 'grouped-no-gaps-environment-humidity-range-results_test_std.csv', index=False, header=True)
 
 
 def group_by_hours_ground_humidity_error(path, input_file, minutes, time_behind_hours, training_percentage):
@@ -169,9 +169,9 @@ def group_by_hours_ground_humidity_error(path, input_file, minutes, time_behind_
     result_2.reset_index(drop=True, inplace=True)
     test_data = result_2.head(test)
 
-    training_data.to_csv(path + 'grouped-no-gaps-ground-humidity-range-results_training.csv', index=False,
+    training_data.to_csv(path + 'grouped-no-gaps-ground-humidity-range-results_training_std.csv', index=False,
                          header=True)
-    test_data.to_csv(path + 'grouped-no-gaps-ground-humidity-range-results_test.csv', index=False,
+    test_data.to_csv(path + 'grouped-no-gaps-ground-humidity-range-results_test_std.csv', index=False,
                      header=True)
 
 
@@ -225,7 +225,7 @@ def group_by_hours_luminosity_error(path, input_file, minutes, time_behind_hours
     result_2.reset_index(drop=True, inplace=True)
     test_data = result_2.head(test)
 
-    training_data.to_csv(path + 'grouped-no-gaps-luminosity-range-results_training.csv', index=False,
+    training_data.to_csv(path + 'grouped-no-gaps-luminosity-range-results_training_std.csv', index=False,
                          header=True)
-    test_data.to_csv(path + 'grouped-no-gaps-luminosity-range-results_test.csv', index=False,
+    test_data.to_csv(path + 'grouped-no-gaps-luminosity-range-results_test_std.csv', index=False,
                      header=True)
