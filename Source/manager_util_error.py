@@ -15,19 +15,14 @@ def group_by_hours_temperature_error(path, input_file, minutes, time_behind_hour
         ticks.drop(ticks.index[0], inplace=True)
         ticks.reset_index(inplace=True, drop=True)
         result.reset_index(inplace=True, drop=True)
-
     ticks_2 = pd.DataFrame()
     result_1 = pd.DataFrame()
     ticks_2['error_temperature'] = df['error_temperature']
-
     for x in range(0, ticks_2['error_temperature'].size):
         result_1 = result_1.append(ticks_2.head(registers_before + 1).transpose())
         ticks_2.drop(ticks_2.index[0], inplace=True)
         ticks_2.reset_index(inplace=True, drop=True)
         result_1.reset_index(inplace=True, drop=True)
-
-    # result = result.dropna()
-    # result_1 = result_1.dropna()
     result.reset_index(inplace=True, drop=True)
     result_1.reset_index(inplace=True, drop=True)
     result_1.drop(result_1.columns[len(result_1.columns) - 1], axis=1, inplace=True)
@@ -35,19 +30,13 @@ def group_by_hours_temperature_error(path, input_file, minutes, time_behind_hour
     result = result.rename_axis(lambda x: 2 * x, axis=1)
     result_1 = result_1.rename_axis(lambda x: 2 * x + 1, axis=1)
 
-    result_2 = pd.concat([result, result_1], axis=1)
+    result_2 = pd.concat([result], axis=1)
     result_2 = result_2.sort_index(axis=1)
-
-    # PRODUCE ERROR PORQYE SE ESTAN TOMANDO REGISTROS DE UNA SET QUE NO FUERON REMOVIDOS
-    # LOS N/A DE LA COLECION QUE ES EL CASO DE DG START TIME
     result['start_time'] = df['start_time']
-
     result_2['hour'] = pd.to_datetime(result['start_time']).dt.hour + \
                        pd.to_datetime(result['start_time']).dt.minute / 60 + \
                        pd.to_datetime(result['start_time']).dt.second / 3600
-
-    result_2['day_year'] = pd.to_datetime(result['start_time']).dt.dayofyear
-
+    # result_2['day_year'] = pd.to_datetime(result['start_time']).dt.dayofyear
     result_2.dropna(inplace=True)
     result_2.reset_index(drop=True, inplace=True)
     training = len(result_2.index) * training_percentage / 100
@@ -56,7 +45,6 @@ def group_by_hours_temperature_error(path, input_file, minutes, time_behind_hour
     result_2 = result_2.ix[training:]
     result_2.reset_index(drop=True, inplace=True)
     test_data = result_2.head(test)
-
     training_data.to_csv(path + 'grouped-no-gaps-temperature-range-results_training.csv', index=False, header=True)
     test_data.to_csv(path + 'grouped-no-gaps-temperature-range-results_test.csv', index=False, header=True)
 
@@ -93,7 +81,7 @@ def group_by_hours_environment_humidity_error(path, input_file, minutes, time_be
     result = result.rename_axis(lambda x: 2 * x, axis=1)
     result_1 = result_1.rename_axis(lambda x: 2 * x + 1, axis=1)
 
-    result_2 = pd.concat([result, result_1], axis=1)
+    result_2 = pd.concat([result], axis=1)
     result_2 = result_2.sort_index(axis=1)
     result['start_time'] = df['start_time']
 
@@ -101,7 +89,7 @@ def group_by_hours_environment_humidity_error(path, input_file, minutes, time_be
                        pd.to_datetime(result['start_time']).dt.minute / 60 + \
                        pd.to_datetime(result['start_time']).dt.second / 3600
 
-    result_2['day_year'] = pd.to_datetime(result['start_time']).dt.dayofyear
+    # result_2['day_year'] = pd.to_datetime(result['start_time']).dt.dayofyear
 
     result_2.dropna(inplace=True)
     result_2.reset_index(drop=True, inplace=True)
@@ -150,7 +138,7 @@ def group_by_hours_ground_humidity_error(path, input_file, minutes, time_behind_
     result = result.rename_axis(lambda x: 2 * x, axis=1)
     result_1 = result_1.rename_axis(lambda x: 2 * x + 1, axis=1)
 
-    result_2 = pd.concat([result, result_1], axis=1)
+    result_2 = pd.concat([result], axis=1)
     result_2 = result_2.sort_index(axis=1)
     result['start_time'] = df['start_time']
 
@@ -158,7 +146,7 @@ def group_by_hours_ground_humidity_error(path, input_file, minutes, time_behind_
                        pd.to_datetime(result['start_time']).dt.minute / 60 + \
                        pd.to_datetime(result['start_time']).dt.second / 3600
 
-    result_2['day_year'] = pd.to_datetime(result['start_time']).dt.dayofyear
+    # result_2['day_year'] = pd.to_datetime(result['start_time']).dt.dayofyear
 
     result_2.dropna(inplace=True)
     result_2.reset_index(drop=True, inplace=True)
@@ -207,14 +195,14 @@ def group_by_hours_luminosity_error(path, input_file, minutes, time_behind_hours
     result = result.rename_axis(lambda x: 2 * x, axis=1)
     result_1 = result_1.rename_axis(lambda x: 2 * x + 1, axis=1)
 
-    result_2 = pd.concat([result, result_1], axis=1)
+    result_2 = pd.concat([result], axis=1)
     result_2 = result_2.sort_index(axis=1)
     result['start_time'] = df['start_time']
     result_2['hour'] = pd.to_datetime(result['start_time']).dt.hour + \
                        pd.to_datetime(result['start_time']).dt.minute / 60 + \
                        pd.to_datetime(result['start_time']).dt.second / 3600
 
-    result_2['day_year'] = pd.to_datetime(result['start_time']).dt.dayofyear
+    # result_2['day_year'] = pd.to_datetime(result['start_time']).dt.dayofyear
 
     result_2.dropna(inplace=True)
     result_2.reset_index(drop=True, inplace=True)

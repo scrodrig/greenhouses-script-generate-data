@@ -36,6 +36,13 @@ def get_generate_minutes_splited(path, input_file, minutes):
     ticks['end_time'] = ticks.index + datetime.timedelta(minutes=minutes)
 
     ticks.to_csv(path + 'raw_data_minutes.csv', index=True, na_rep='N/A', columns=columns)
+
+    ticks['error_luminosity'] = 0
+
+    ticks = ticks.dropna()
+
+    ticks.to_csv(path + 'raw_data_minutes_no_gaps.csv', index=True, na_rep='N/A', columns=columns)
+
     return 'raw_data_minutes.csv'
 
 
