@@ -3,6 +3,10 @@ import getopt
 import sys
 import manager_util as manager_util
 import manager_util_error as manager_util_error
+import manager_util_std as manager_util_std
+import manager_util_error_std as manager_util_error_std
+import manager_util_all as manager_util_all
+import manager_util_all_std as manager_util_all_std
 
 VERSION = "1.0"
 
@@ -40,6 +44,40 @@ def prepare_data_from_row(path, input_file, minutes, time_behind_minutes, traini
                                                        time_behind_hours=time_behind_minutes,
                                                        training_percentage=training_percentage)
 
+    manager_util_all.group_by_hours_all(path=path)
+
+
+def prepare_data_from_row_std(path, input_file, minutes, time_behind_minutes, training_percentage):
+    output = manager_util_std.get_generate_minutes_splited(path=path,
+                                                           input_file=input_file,
+                                                           minutes=minutes)
+
+    manager_util_error_std.group_by_hours_temperature_error(path=path,
+                                                            input_file=output,
+                                                            minutes=minutes,
+                                                            time_behind_hours=time_behind_minutes,
+                                                            training_percentage=training_percentage)
+
+    manager_util_error_std.group_by_hours_environment_humidity_error(path=path,
+                                                                     input_file=output,
+                                                                     minutes=minutes,
+                                                                     time_behind_hours=time_behind_minutes,
+                                                                     training_percentage=training_percentage)
+
+    manager_util_error_std.group_by_hours_ground_humidity_error(path=path,
+                                                                input_file=output,
+                                                                minutes=minutes,
+                                                                time_behind_hours=time_behind_minutes,
+                                                                training_percentage=training_percentage)
+
+    manager_util_error_std.group_by_hours_luminosity_error(path=path,
+                                                           input_file=output,
+                                                           minutes=minutes,
+                                                           time_behind_hours=time_behind_minutes,
+                                                           training_percentage=training_percentage)
+
+    manager_util_all_std.group_by_hours_all_std(path=path)
+
 
 def main():
     optlist, arglist = getopt.getopt(sys.argv[1:], "p:i:m:h:t:Vs")
@@ -64,6 +102,12 @@ def main():
                           minutes=minutes,
                           time_behind_minutes=time_behind_minutes,
                           training_percentage=training_percentage)
+    print 'Processing data for std :)'
+    prepare_data_from_row_std(path=path,
+                              input_file=input_file,
+                              minutes=minutes,
+                              time_behind_minutes=time_behind_minutes,
+                              training_percentage=training_percentage)
 
     print 'Done! :) yaaaaaaaaayyyyy!!!!! \o/'
 
